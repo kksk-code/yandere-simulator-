@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emany</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+             height: 100vh;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             overflow: hidden;
+             background-image: linear-gradient(120deg, #ee63bb 0%, #ffbffe 100%);
+        }
+        .shell{
+            width: 1700px;
+            margin: 0 auto;
+            height: 750px;
+            display: flex;
+        }
+        .card{
+            flex-basis:15%;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:not(:nth-child(1)){
+            margin-left: 20px;
+        }
+        .card:hover{
+            overflow:initial;
+        }
+        .box{
+            position: absolute;
+            top:0%;
+            left:0%;
+            width: 100%;
+            height: 100%;
+            transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+            overflow: hidden;
+            border-radius: 10px;
+            background-image: linear-gradient(180deg, #e0e9ff 0%, #ffccfe 100%);
+        }
+        .box>img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%,-10%) scale(3);
+            position: relative;
+            z-index: -1;
+            
+        }
+        .card:hover>.box img{
+            opacity: 0;
+        }
+        .card:hover>.box{
+            transform:scaleY(1.5);
+            background-image: initial;
+            background-color: hsl(303, 100%, 50%);
+            z-index: 2;
+            cursor: pointer;
+
+        }
+        .card>h4{
+            position: absolute;
+            display: block;
+            width: 120px;
+            text-align: center;
+            color: rgb(255, 0, 157);
+            bottom: 0;
+            left:50% ;
+            transform: translate(-50%,-35%);
+            font-size: 28px;
+            z-index: 100;
+            transition: .2s;
+        }
+        .caard:hover h4{
+            color: azure;
+            transform: translate(-50%,250%);
+        }
+        .card:hover .character>img{
+            opacity: 1;
+
+        }
+        .card>.character{
+            position: absolute;
+            top: -100px;
+            left: -400px;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            pointer-events: none;
+
+        }
+        .character>img{
+            width: 820px;
+            height: 820px;
+            object-fit: contain;
+            opacity: 0;
+            transition: all .3s;
+            position: relative;
+            z-index: 99;;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="shell">
+        <div class="card">
+            <div class="box"> <img src="2.png" ></div>
+            <div class=""character>
+                <img src="2.png" >
+            </div>
+            <h4>若泉辉夜</h4>
+        </div>
+        
+        <div class="card">
+            <div class="box"> <img src="3.png" ></div>
+            <div class=""character>
+                <img src="3.png" >
+            </div>
+            <h4>若泉辉夜</h4>
+        </div>
+        <div class="card">
+            <div class="box"> <img src="4.png" ></div>
+            <div class=""character>
+                <img src="4.png" >
+            </div>
+            <h4>若泉辉夜</h4>
+        </div>
+        <div class="card">
+            <div class="box"> <img src="5.png" ></div>
+            <div class=""character>
+                <img src="5.png" >
+            </div>
+            <h4>若泉辉夜</h4>
+        </div>
+        <div class="card">
+            <div class="box"> <img src="6.png" ></div>
+            <div class=""character>
+                <img src="6.png" >
+            </div>
+            <h4>若泉辉夜</h4>
+        </div>
+        <div class="card">
+            <div class="box"> <img src="7.png" ></div>
+            <div class=""character>
+                <img src="7.png" >
+            </div>
+            <h4>若泉辉夜</h4>
+        </div>
+        <div class="card">
+            <div class="box"> <img src="8.png" ></div>
+            <div class=""character>
+                <img src="8.png" >
+            </div>
+            <h4>若泉辉夜</h4>
+        </div>
+        <div class="card">
+            <div class="box"> <img src="9.png" ></div>
+            <div class=""character>
+                <img src="9.png" >
+            </div>
+            <h4>若泉辉夜</h4>
+        </div>
+        <div class="card">
+            <div class="box"> <img src="10.png" ></div>
+            <div class=""character>
+                <img src="10.png" >
+            </div>
+            <h4>若泉辉夜</h4>
+        </div>
+        <div class="card">
+            <div class="box"> <img src="11.png" ></div>
+            <div class=""character>
+                <img src="11.png" >
+            </div>
+            <h4>若泉辉夜</h4>
+        </div>
+        
+        
+    </div>
+    
+</body>
+</html>
